@@ -16,15 +16,6 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <style>
-        #tools {
-            margin-top: 10px;
-            width: 100%;
-            float: left;
-
-        }
-    </style>
-
 </head>
 
 <body>
@@ -109,41 +100,46 @@
 
                         </div>
 
-                        <div id="tools" style="margin-bottom:20px;">
+                        <! –– These could be placed in a row or in columns––>
 
-                            <! –– These could be placed in a row or in columns––>
-
-                                <label class="CheckboxContainer" style="float:none; width:100px;">Option 1
+                            <div class="row">
+                                <label class="CheckboxContainer" style="width:100px;">Option 1
                                     <input type="checkbox" checked>
                                     <span class="checkmark"></span>
                                 </label>
 
-                                <label class="CheckboxContainer" style="float:none; width:100px;">Option 2
+                                <label class="CheckboxContainer" style="width:100px;">Option 2
                                     <input type="checkbox" checked>
                                     <span class="checkmark"></span>
                                 </label>
+                            </div>
 
-                                <br>
-
-                                <div class="SwitchButtonContainer">
-                                    <div class="SwitchButtonLeft SwitchButtonSelected">Option 1</div>
-                                    <div class="SwitchButtonRight SwitchButton">Option 2</div>
+                            <div class="row">
+                                <div class="inline-block">
+                                    <div class="SwitchButtonContainer">
+                                        <div class="SwitchButtonLeft SwitchButtonSelected">Option 1</div>
+                                        <div class="SwitchButtonRight SwitchButton">Option 2</div>
+                                    </div>
                                 </div>
+                            </div>
 
-                                <br> <br> <br>
-
-                                <div class="SwitchButtonContainer" style="">
-                                    <div class="SwitchButtonLeft SwitchButton">Option 1</div>
-                                    <div class="SwitchButtonMiddle SwitchButton">Option 2</div>
-                                    <div class="SwitchButtonRight SwitchButtonSelected">Option 3</div>
+                            <div class="row">
+                                <div class="inline-block">
+                                    <div class="SwitchButtonContainer">
+                                        <div class="SwitchButtonLeft SwitchButton">Option 1</div>
+                                        <div class="SwitchButtonMiddle SwitchButton">Option 2</div>
+                                        <div class="SwitchButtonRight SwitchButtonSelected">Option 3</div>
+                                    </div>
                                 </div>
-                        </div>
+                            </div>
 
-                        <div class="TabContainer" style="float:left; margin-bottom:130px;">
-                            <div class="TabButton TabSelected" style="margin-left:0px;">Texter</div>
-                            <div class="TabButton">Galleri</div>
-                            <div class="TabButton">Analys</div>
-                        </div>
+                            <div class="row">
+                                <div class="TabContainer">
+                                    <div class="TabButton TabSelected" style="margin-left:0px;">Texter</div>
+                                    <div class="TabButton">Galleri</div>
+                                    <div class="TabButton">Analys</div>
+                                </div>
+                            </div>
 
                 </div>
 

@@ -82,12 +82,6 @@ Body {
   font-family: "Antic Didone", serif;
 }
 
-/* Typography */
-
-h1 {
-  padding: 20px 0 0 0;
-}
-
 /* Information overlays */
 
 .AboutContainer {
@@ -170,9 +164,8 @@ h1 {
 }
 
 .SwitchButtonContainer {
-  float: left;
+  display: flex;
   font-size: 18px;
-  margin-bottom: 20px;
   cursor: pointer;
   border-radius: 5px;
   border-style: solid;
@@ -184,9 +177,6 @@ h1 {
 
 .SwitchButtonLeft {
   color: black;
-
-  float: left;
-
   width: auto;
   padding: 5px 15px 5px 15px;
   border-radius: 5px 0px 0px 5px;
@@ -195,19 +185,13 @@ h1 {
 
 .SwitchButtonMiddle {
   color: black;
-  float: left;
-
   width: auto;
   padding: 5px 15px 5px 15px;
-
   transition: all 0.2s ease-in-out;
 }
 
 .SwitchButtonRight {
   color: black;
-
-  float: left;
-
   width: auto;
   padding: 5px 15px 5px 15px;
   border-radius: 0px 5px 5px 0px;
@@ -228,15 +212,13 @@ h1 {
 }
 
 .TabContainer {
+  display: flex;
   font-size: 22px;
-  float: left;
-  margin-bottom: 20px;
 }
 
 .TabButton {
   margin-left: 8px;
   color: black;
-  float: left;
   width: auto;
   padding: 5px 15px 5px 15px;
   border-radius: 10px;
@@ -275,7 +257,6 @@ select {
 /* Checkboxes */
 
 .CheckboxContainer {
-  float: left;
   display: block;
   position: relative;
   width: auto;
@@ -345,4 +326,14 @@ select {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/* Utility */
+
+.row {
+  margin-bottom: 20px;
+}
+
+.inline-block {
+  display: inline-block;
 }
