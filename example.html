@@ -17,6 +17,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <style>
+        #MainTitle {
+            font-family: "Antic Didone", serif;
+        }
+
         .publication {
             width: 47%;
             height: auto;
@@ -50,8 +54,6 @@
         }
 
         .pubTitle {
-            width: 100%;
-            padding: 15px 15px 15px 30px;
             font-size: 24px;
             color: #0099cc;
         }
@@ -61,7 +63,11 @@
         }
 
         #closeTab {
-            display: block;
+            float: right;
+            min-width: 120px;
+            height: 25px;
+            margin-right: 2.5%;
+            font-size: 22px;
         }
 
         @media screen and (max-width: 1600px) {
@@ -91,9 +97,8 @@
         }
 
         #search {
-            margin-top: 40px;
+            margin-top: 20px;
             font-size: 50px;
-            margin-bottom: 20px;
             width: 100%;
             background-color: rgba(0, 0, 0, 0);
             height: 80px;
@@ -132,8 +137,12 @@
             }
         }
 
+        .leftPane .TabContainer {
+            margin-left: -15px;
+        }
+
         .leftPaneContent {
-            padding: 15px 30px 30px;
+            padding: 15px 30px;
             width: 100%;
         }
 
@@ -202,18 +211,17 @@
 
         <! –– "Top" contains GU logotype, Title and subtitle––>
 
-            <div class="borders" style="">
+            <div class="borders">
 
-                <div id="intro" style="width:100%">
+                <div id="intro">
 
-                    <div id="brand" style="">
+                    <div id="brand">
 
                         <div id="GUlogotypeBG">
                             <div id="GUlogotype"></div>
                         </div>
 
-                        <div id="CDHLogo">Centre<br><span
-                                style="font-family: 'Clicker Script', cursive; font-size:30px;  vertical-align:40%;">for
+                        <div id="CDHLogo">Centre<br><span class="cdh-logo-cursive">for
                             </span>Digital <br>Humanities</div>
 
                     </div>
@@ -222,25 +230,24 @@
 
                     <div id="MainTitle">Nordisk<br>Familjebok</div>
 
-                    <div style="margin-top:30px; margin-bottom:80px;">
-
+                    <div class="row bar">
                         <a onclick="$('#AboutEditions').fadeIn('fast');">
-                            <div class="ButtonContainer" style="float:left; width:170px;">
-                                <div class="ButtonIcon"
-                                    style=" background-image: url(graphics/interface/linkbutton.png);"></div>
-                                <div class="ButtonLabel" style="">Om utg&aring;vorna </div>
+                            <div class="ButtonContainer">
+                                <div class="ButtonIcon ButtonIconLink"></div>
+                                <div class="ButtonLabel">Om utg&aring;vorna </div>
                             </div>
                         </a>
                         <a onclick="$('#AboutEditions').fadeIn('fast');">
-                            <div class="ButtonContainer" style="float:left; margin-left:10px; width:170px;">
-                                <div class="ButtonIcon"
-                                    style=" background-image: url(graphics/interface/linkbutton.png);"></div>
-                                <div class="ButtonLabel" style="">Instruktioner </div>
+                            <div class="ButtonContainer">
+                                <div class="ButtonIcon ButtonIconLink"></div>
+                                <div class="ButtonLabel">Instruktioner </div>
                             </div>
                         </a>
                     </div>
 
-                    <input type="text" id="search" name="search" placeholder="S&ouml;k...">
+                    <div class="row">
+                        <input type="text" id="search" name="search" placeholder="S&ouml;k...">
+                    </div>
 
                     <div class="row">
                         <div class="inline-block">
@@ -250,15 +257,14 @@
                             </div>
                         </div>
 
-                        <div class="ButtonContainer" id="closeTab"
-                            style="float:right; width:120px; height:25px; margin-right:2.5%; ">
-                            <div class="ButtonLabel" style="font-size:22px;">Sl&aring; ihop flikar</div>
+                        <div class="ButtonContainer" id="closeTab">
+                            <div class="ButtonLabel">Sl&aring; ihop flikar</div>
                         </div>
                     </div>
 
                     <! –– This Div collects every edition item in a new section––>
 
-                        <div style="width:100%; float:left;">
+                        <div class="clearfix">
 
                             <div class="publication">
 
@@ -266,15 +272,15 @@
 
                                     <div class="leftPane">
 
-                                        <div class="TabContainer"
-                                            style="margin-left:15px; margin-top:15px; width:100%;">
-                                            <div class="TabButton TabSelected" style="margin-left:0px;">Utg&aring;va 1
+                                        <div class="leftPaneContent">
+                                            <div class="TabContainer">
+                                                <div class="TabButton TabSelected">Utg&aring;va 1</div>
+                                                <div class="TabButton">Utg&aring;va 2</div>
+                                                <div class="TabButton">Analys</div>
                                             </div>
-                                            <div class="TabButton">Utg&aring;va 2</div>
-                                            <div class="TabButton">Analys</div>
-                                        </div>
 
-                                        <div class="pubTitle">Utg&aring;va 1</div>
+                                            <div class="pubTitle">Utg&aring;va 1</div>
+                                        </div>
 
                                         <div class="leftPaneContent">
                                             <div class="teaser">
@@ -305,13 +311,18 @@
 
                             <div class="publication2">
 
-                                <div class="pubContainer" style="width:100%;">
+                                <div class="pubContainer">
                                     <div class="leftPane">
 
-                                        <div class="pubTitle">Utg&aring;va 2</div>
                                         <div class="leftPaneContent">
-                                            <h1>Stockholm</h1>
-                                            <p>En huvudstad</p>
+                                            <div class="pubTitle">Utg&aring;va 2</div>
+                                        </div>
+
+                                        <div class="leftPaneContent">
+                                            <div class="teaser">
+                                                <h1>Stockholm</h1>
+                                                <p>En huvudstad</p>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -330,7 +341,7 @@
 
             </div>
 
-            <div id="foot" style="float:left; width:100%;"></div>
+            <div id="foot"></div>
 
             <script>$("#foot").load("foot.html");</script>
 

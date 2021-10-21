@@ -6,8 +6,6 @@
 
     <title>Template</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,200&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script&display=swap" rel="stylesheet">
@@ -46,11 +44,11 @@
 
             <! –– GU and CDH logotypes––>
 
-                <div class="borders" style="">
+                <div class="borders">
 
-                    <div id="intro" style="width:100%">
+                    <div id="intro">
 
-                        <div id="brand" style="">
+                        <div id="brand">
 
                             <div id="GUlogotypeBG">
                                 <div id="GUlogotype"></div>
@@ -58,8 +56,7 @@
 
                             <! –– If vertical space is precious, remove this line and use the foot template with the
                                 CDHlogo in lower right corner––>
-                                <div id="CDHLogo">Centre<br><span
-                                        style="font-family: 'Clicker Script', cursive; font-size:30px;  vertical-align:40%;">for
+                                <div id="CDHLogo">Centre<br><span class="cdh-logo-cursive">for
                                     </span>Digital <br>Humanities</div>
 
                         </div>
@@ -67,83 +64,85 @@
 
                     <! –– Title and settings––>
 
-                        <div id="MainTitle" style="font-family: 'Barlow Condensed', sans-serif;">Fancy<br>Title</div>
+                        <div id="MainTitle">Fancy<br>Title</div>
 
-                        <div style="margin-top:30px; margin-bottom:20px;">
+                        <div class="row">
 
                             <! –– These could be placed in a row or in columns––>
 
-                                <a onclick="$('#AboutEditions').fadeIn('fast');">
-                                    <div class="ButtonContainer" style="width:220px;">
-                                        <div class="ButtonIcon"
-                                            style=" background-image: url(graphics/interface/plusbutton.png);"></div>
-                                        <div class="ButtonLabel" style="">Add something</div>
+                                <div>
+                                    <a onclick="$('#AboutEditions').fadeIn('fast');">
+                                        <div class="ButtonContainer">
+                                            <div class="ButtonIcon ButtonIconAdd"></div>
+                                            <div class="ButtonLabel">Add something</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="ButtonContainer">
+                                        <div class="ButtonIcon ButtonIconDownload"></div>
+                                        <div class="ButtonLabel">Download something</div>
                                     </div>
-                                </a>
-                                <div class="ButtonContainer" style="width:220px;">
-                                    <div class="ButtonIcon"
-                                        style=" background-image: url(graphics/interface/downloadbutton.png);"></div>
-                                    <div class="ButtonLabel" style="">Download something</div>
+                                </div>
+                                <div>
+                                    <div class="ButtonContainer">
+                                        <div class="ButtonIcon ButtonIconLink"></div>
+                                        <div class="ButtonLabel">Link to page</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="ButtonContainer">
+                                        <div class="ButtonIcon ButtonIconBack"></div>
+                                        <div class="ButtonLabel">Start over</div>
+                                    </div>
+
                                 </div>
 
-                                <div class="ButtonContainer" style="width:220px;">
-                                    <div class="ButtonIcon"
-                                        style=" background-image: url(graphics/interface/linkbutton.png);"></div>
-                                    <div class="ButtonLabel" style="">Link to page</div>
-                                </div>
+                                <! –– These could be placed in a row or in columns––>
 
-                                <div class="ButtonContainer" style="width:220px;">
-                                    <div class="ButtonIcon"
-                                        style=" background-image: url(graphics/interface/backbutton.png);"></div>
-                                    <div class="ButtonLabel" style="">Start over</div>
-                                </div>
+                                    <div class="row">
+                                        <label class="CheckboxContainer">Option 1
+                                            <input type="checkbox" checked>
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="CheckboxContainer">Option 2
+                                            <input type="checkbox" checked>
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="inline-block">
+                                            <div class="SwitchButtonContainer">
+                                                <div class="SwitchButtonLeft SwitchButtonSelected">Option 1</div>
+                                                <div class="SwitchButtonRight SwitchButton">Option 2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="inline-block">
+                                            <div class="SwitchButtonContainer">
+                                                <div class="SwitchButtonLeft SwitchButton">Option 1</div>
+                                                <div class="SwitchButtonMiddle SwitchButton">Option 2</div>
+                                                <div class="SwitchButtonRight SwitchButtonSelected">Option 3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="TabContainer">
+                                            <div class="TabButton TabSelected">Texter</div>
+                                            <div class="TabButton">Galleri</div>
+                                            <div class="TabButton">Analys</div>
+                                        </div>
+                                    </div>
 
                         </div>
-
-                        <! –– These could be placed in a row or in columns––>
-
-                            <div class="row">
-                                <label class="CheckboxContainer" style="width:100px;">Option 1
-                                    <input type="checkbox" checked>
-                                    <span class="checkmark"></span>
-                                </label>
-
-                                <label class="CheckboxContainer" style="width:100px;">Option 2
-                                    <input type="checkbox" checked>
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-
-                            <div class="row">
-                                <div class="inline-block">
-                                    <div class="SwitchButtonContainer">
-                                        <div class="SwitchButtonLeft SwitchButtonSelected">Option 1</div>
-                                        <div class="SwitchButtonRight SwitchButton">Option 2</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="inline-block">
-                                    <div class="SwitchButtonContainer">
-                                        <div class="SwitchButtonLeft SwitchButton">Option 1</div>
-                                        <div class="SwitchButtonMiddle SwitchButton">Option 2</div>
-                                        <div class="SwitchButtonRight SwitchButtonSelected">Option 3</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="TabContainer">
-                                    <div class="TabButton TabSelected" style="margin-left:0px;">Texter</div>
-                                    <div class="TabButton">Galleri</div>
-                                    <div class="TabButton">Analys</div>
-                                </div>
-                            </div>
-
                 </div>
 
-                <div id="foot" style="float:left; width:100%; bottom:0px"></div>
+                <div id="foot"></div>
 
                 <script>$("#foot").load("foot.html");</script>
 
