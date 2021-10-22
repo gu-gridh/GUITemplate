@@ -308,6 +308,7 @@ select {
 .foot {
   background-color: rgb(65, 65, 65);
   color: white;
+  margin-top: 130px;
   padding: 20px 65px 30px;
   height: 120px;
 }
