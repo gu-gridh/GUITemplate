@@ -15,21 +15,7 @@
         }
 
         .publication {
-            width: 47%;
-            height: auto;
-            float: left;
-            transition: all .2s ease-in-out;
-            border-style: none;
-            border-color: black;
-            border-width: 0.5px;
-            border-radius: 5px;
-            overflow: hidden;
-            margin-bottom: 40px;
-            margin-right: 40px;
-            background-color: rgb(245, 245, 245);
-        }
-
-        .publication2 {
+            display: flex;
             width: 47%;
             height: auto;
             float: left;
@@ -49,7 +35,7 @@
             color: #0099cc;
         }
 
-        .TabContainer {
+        .publication .TabContainer {
             display: none;
         }
 
@@ -68,8 +54,6 @@
             }
 
             .publication2 {
-                margin-right: 0px;
-                width: 100%;
                 display: none;
             }
 
@@ -77,8 +61,9 @@
                 display: none;
             }
 
-            .TabContainer {
+            .publication .TabContainer {
                 display: flex;
+                margin-left: -15px;
             }
 
             #closeTab {
@@ -88,45 +73,17 @@
         }
 
         #search {
-            margin-top: 20px;
             font-size: 50px;
             width: 100%;
             background-color: rgba(0, 0, 0, 0);
             height: 80px;
             padding: 0px 10px 10px 0px;
-            margin-right: 30px;
             font-family: "Barlow Condensed", sans-serif;
             font-weight: 100;
         }
 
-        .pubContainer {
-            width: 100%;
-            height: inherit;
-            display: flex;
-        }
-
         .leftPane {
-            width: 70%;
-            height: 100%;
-            float: left;
-            padding-bottom: 100%;
-            margin-bottom: -100%;
-        }
-
-        @media screen and (max-width: 700px) {
-            .leftPane {
-                width: 100%;
-            }
-        }
-
-        @media screen and (max-width: 700px) {
-            .rightPane {
-                display: none;
-            }
-        }
-
-        .leftPane .TabContainer {
-            margin-left: -15px;
+            flex: 1
         }
 
         .leftPaneContent {
@@ -136,21 +93,20 @@
 
         .rightPane {
             width: 30%;
-            min-height: 200px;
-            height: 100%;
             color: black;
             border-left-style: dotted;
             border-width: 1px;
             border-color: gray;
-            padding-bottom: 100%;
-            margin-bottom: -100%;
         }
 
         .rightPaneContent {
             padding: 20px;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
+        }
+
+        @media screen and (max-width: 700px) {
+            .rightPane {
+                display: none;
+            }
         }
 
         .teaser:not(:last-child) {
@@ -159,16 +115,6 @@
 
         .teaser h1 {
             margin-top: 0;
-        }
-
-        #guinfo a:link {
-            text-decoration: none;
-            color: white;
-        }
-
-        #guinfo a:visited {
-            text-decoration: none;
-            color: white;
         }
     </style>
 </head>
@@ -198,21 +144,19 @@
 
     <div class="borders">
 
-        <div id="intro">
-            <div id="brand">
-                <div id="GUlogotypeBG">
-                    <div id="GUlogotype"></div>
-                </div>
-                <div id="CDHLogo">Centre<br><span class="cdh-logo-cursive">for
-                    </span>Digital <br>Humanities</div>
+        <div id="brand">
+            <div id="GUlogotypeBG">
+                <div id="GUlogotype"></div>
             </div>
+            <div id="CDHLogo">Centre<br><span class="cdh-logo-cursive">for
+                </span>Digital <br>Humanities</div>
         </div>
 
         <!-- Title, subtitle and settings -->
 
         <div id="MainTitle">Nordisk<br>Familjebok</div>
 
-        <div class="row bar">
+        <div class="row-controls">
             <a onclick="$('#AboutEditions').fadeIn('fast');">
                 <div class="ButtonContainer">
                     <div class="ButtonIcon ButtonIconLink"></div>
@@ -231,12 +175,10 @@
             <input type="text" id="search" name="search" placeholder="S&ouml;k...">
         </div>
 
-        <div class="row">
-            <div class="inline-block">
-                <div class="SwitchButtonContainer">
-                    <div class="SwitchButtonLeft SwitchButtonSelected">Uppslagsord</div>
-                    <div class="SwitchButtonRight SwitchButton">Fulltexts&ouml;kning</div>
-                </div>
+        <div class="row-controls">
+            <div class="SwitchButtonContainer">
+                <div class="SwitchButton SwitchButtonSelected">Uppslagsord</div>
+                <div class="SwitchButton">Fulltexts&ouml;kning</div>
             </div>
 
             <div class="ButtonContainer" id="closeTab">
@@ -248,63 +190,59 @@
 
         <div class="clearfix">
             <div class="publication">
-                <div class="pubContainer">
-                    <div class="leftPane">
-                        <div class="leftPaneContent">
-                            <div class="TabContainer">
-                                <div class="TabButton TabSelected">Utg&aring;va 1</div>
-                                <div class="TabButton">Utg&aring;va 2</div>
-                                <div class="TabButton">Analys</div>
-                            </div>
-                            <div class="pubTitle">Utg&aring;va 1</div>
+                <div class="leftPane">
+                    <div class="leftPaneContent">
+                        <div class="TabContainer">
+                            <div class="TabButton TabSelected">Utg&aring;va 1</div>
+                            <div class="TabButton">Utg&aring;va 2</div>
+                            <div class="TabButton">Analys</div>
                         </div>
+                        <div class="pubTitle">Utg&aring;va 1</div>
+                    </div>
 
-                        <div class="leftPaneContent">
-                            <div class="teaser">
-                                <h1>Stockholm</h1>
-                                <p>En huvudstad</p>
-                            </div>
-                            <div class="teaser">
-                                <h1>Stockholm</h1>
-                                <p>En huvudstad</p>
-                            </div>
-                            <div class="teaser">
-                                <h1>Stockholmare</h1>
-                                <p>En person</p>
-                            </div>
-                            <div class="teaser">
-                                <h1>Stock</h1>
-                                <p>En tjock pinne</p>
-                            </div>
+                    <div class="leftPaneContent">
+                        <div class="teaser">
+                            <h1>Stockholm</h1>
+                            <p>En huvudstad</p>
+                        </div>
+                        <div class="teaser">
+                            <h1>Stockholm</h1>
+                            <p>En huvudstad</p>
+                        </div>
+                        <div class="teaser">
+                            <h1>Stockholmare</h1>
+                            <p>En person</p>
+                        </div>
+                        <div class="teaser">
+                            <h1>Stock</h1>
+                            <p>En tjock pinne</p>
                         </div>
                     </div>
-                    <div class="rightPane">
-                        <div class="rightPaneContent">
-                            Data och grafer
-                        </div>
+                </div>
+                <div class="rightPane">
+                    <div class="rightPaneContent">
+                        Data och grafer
                     </div>
                 </div>
             </div>
 
-            <div class="publication2">
-                <div class="pubContainer">
-                    <div class="leftPane">
-                        <div class="leftPaneContent">
-                            <div class="pubTitle">Utg&aring;va 2</div>
-                        </div>
-
-                        <div class="leftPaneContent">
-                            <div class="teaser">
-                                <h1>Stockholm</h1>
-                                <p>En huvudstad</p>
-                            </div>
-                        </div>
+            <div class="publication publication2">
+                <div class="leftPane">
+                    <div class="leftPaneContent">
+                        <div class="pubTitle">Utg&aring;va 2</div>
                     </div>
 
-                    <div class="rightPane">
-                        <div class="rightPaneContent">
-                            Data och grafer
+                    <div class="leftPaneContent">
+                        <div class="teaser">
+                            <h1>Stockholm</h1>
+                            <p>En huvudstad</p>
                         </div>
+                    </div>
+                </div>
+
+                <div class="rightPane">
+                    <div class="rightPaneContent">
+                        Data och grafer
                     </div>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 /* Logos */
 
 #CDHLogo {
-  width: auto;
   text-align: left;
   font-weight: 100;
   font-style: normal;
@@ -22,7 +21,6 @@
 
 #GUlogotypeBG {
   float: right;
-  margin-right: 0px;
   height: 165px;
   width: 155px;
   background: linear-gradient(
@@ -46,15 +44,9 @@
 /* Title: adjust size and font-family to suit the project but keep it distinct from Barlow */
 
 #MainTitle {
-  width: auto;
-  height: auto;
-  text-align: left;
-  font-weight: 100;
-  font-style: normal;
   font-size: 90px;
   line-height: 0.8;
   padding: 40px 0px 0px 0px;
-  vertical-align: middle;
   margin-bottom: 30px;
 }
 
@@ -109,10 +101,8 @@
 
 .ButtonContainer {
   display: inline-block;
-  font-family: "Barlow Condensed", sans-serif;
   font-size: 25px;
   height: 30px;
-  width: auto;
   min-width: 220px;
   border-radius: 10px;
   padding: 8px;
@@ -168,31 +158,13 @@
   box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.SwitchButtonLeft {
-  color: black;
-  width: auto;
-  padding: 5px 15px 5px 15px;
-  border-radius: 5px 0px 0px 5px;
+.SwitchButton {
+  padding: 5px 15px;
   transition: all 0.2s ease-in-out;
-}
-
-.SwitchButtonMiddle {
-  color: black;
-  width: auto;
-  padding: 5px 15px 5px 15px;
-  transition: all 0.2s ease-in-out;
-}
-
-.SwitchButtonRight {
-  color: black;
-  width: auto;
-  padding: 5px 15px 5px 15px;
-  border-radius: 0px 5px 5px 0px;
-  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .SwitchButton:hover {
-  cursor: pointer;
   box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -210,11 +182,10 @@
 }
 
 .TabButton {
-  color: black;
-  width: auto;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 15px;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .TabButton + .TabButton {
@@ -222,7 +193,6 @@
 }
 
 .TabButton:hover {
-  cursor: pointer;
   background-color: white;
 }
 
@@ -238,7 +208,6 @@ input[type="text"],
 select {
   width: 100%;
   outline: none;
-  margin: 8px 0;
   display: inline-block;
   border: 0px;
   background-color: rgba(0, 0, 0, 1);
@@ -255,7 +224,6 @@ select {
 .CheckboxContainer {
   display: block;
   position: relative;
-  width: auto;
   padding-left: 35px;
   margin-bottom: 12px;
   margin-right: 40px;
@@ -324,12 +292,16 @@ select {
   transform: rotate(45deg);
 }
 
-.bar {
+.row {
+  margin-block: 20px;
+}
+
+.row-controls {
+  margin: 10px -10px;
   display: flex;
   flex-wrap: wrap;
-  margin: -10px;
 }
-.bar > * {
+.row-controls > * {
   margin: 10px;
 }
 
