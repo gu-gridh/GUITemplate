@@ -14,11 +14,13 @@
             font-family: "Antic Didone", serif;
         }
 
-        .publication {
+        .publications {
             display: flex;
-            width: 47%;
-            height: auto;
-            float: left;
+            justify-content: space-between;
+        }
+
+        .publication {
+            width: 48.5%;
             transition: all 0.2s ease-in-out;
             border-style: none;
             border-color: black;
@@ -26,8 +28,11 @@
             border-radius: 5px;
             overflow: hidden;
             margin-bottom: 40px;
-            margin-right: 40px;
             background-color: rgb(245, 245, 245);
+        }
+
+        .publication.publication2 {
+            margin-right: 0;
         }
 
         .pub-title {
@@ -40,10 +45,7 @@
         }
 
         #close-tab {
-            float: right;
             min-width: 120px;
-            height: 25px;
-            margin-right: 2.5%;
             font-size: 22px;
         }
 
@@ -160,30 +162,32 @@
         <div id="main-title">Nordisk<br />Familjebok</div>
 
         <div class="row-controls">
-            <a onclick="$('#about-editions').fadeIn('fast');">
-                <div class="button-container">
-                    <div class="button-icon button-icon-link"></div>
-                    <div class="button-label">Om utg&aring;vorna</div>
-                </div>
-            </a>
-            <a onclick="$('#about-editions').fadeIn('fast');">
-                <div class="button-container">
-                    <div class="button-icon button-icon-link"></div>
-                    <div class="button-label">Instruktioner</div>
-                </div>
-            </a>
+            <div class="row-controls-section">
+                <a onclick="$('#about-editions').fadeIn('fast');">
+                    <div class="button-container">
+                        <div class="button-icon button-icon-link"></div>
+                        <div class="button-label">Om utg&aring;vorna</div>
+                    </div>
+                </a>
+                <a onclick="$('#about-editions').fadeIn('fast');">
+                    <div class="button-container">
+                        <div class="button-icon button-icon-link"></div>
+                        <div class="button-label">Instruktioner</div>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <div class="row">
             <input type="text" id="search" name="search" placeholder="S&ouml;k..." />
         </div>
 
+
         <div class="row-controls">
             <div class="switch-button-container">
                 <div class="switch-button switch-button-selected">Uppslagsord</div>
                 <div class="switch-button">Fulltexts&ouml;kning</div>
             </div>
-
             <div class="button-container" id="close-tab">
                 <div class="button-label">Sl&aring; ihop flikar</div>
             </div>
@@ -191,7 +195,7 @@
 
         <!-- This Div collects every edition item in a new section -->
 
-        <div class="clearfix">
+        <div class="publications">
             <div class="publication">
                 <div class="left-pane">
                     <div class="left-pane-content">
