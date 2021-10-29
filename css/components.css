@@ -21,7 +21,7 @@
 
 /* Logos */
 
-#CDHLogo {
+#cdh-logo {
   text-align: left;
   font-weight: 100;
   font-style: normal;
@@ -30,17 +30,17 @@
   font-family: "Barlow Condensed", sans-serif;
 }
 
-#CDHLogo .cdh-logo-cursive {
+#cdh-logo .cdh-logo-cursive {
   font-family: "Clicker Script", cursive;
   font-size: 30px;
   vertical-align: 40%;
 }
 
-#brand #CDHLogo {
+#brand #cdh-logo {
   padding: 30px 0px 10px 0px;
 }
 
-#GUlogotypeBG {
+#gu-logo-bg {
   float: right;
   height: 165px;
   width: 155px;
@@ -52,7 +52,7 @@
   border-radius: 0px 0px 5px 5px;
 }
 
-#GUlogotype {
+#gu-logo {
   width: 155px;
   height: 185px;
   padding: 15px 0 0 0;
@@ -64,7 +64,7 @@
 
 /* Title: adjust size and font-family to suit the project but keep it distinct from Barlow */
 
-#MainTitle {
+#main-title {
   font-size: 90px;
   line-height: 0.8;
   padding: 40px 0px 0px 0px;
@@ -73,7 +73,7 @@
 
 /* Information overlays */
 
-.AboutContainer {
+.about-container {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -86,7 +86,7 @@
   backdrop-filter: blur(10px);
 }
 
-.About {
+.about {
   height: auto;
   width: 70%;
   border-radius: 10px;
@@ -95,7 +95,7 @@
   box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.3);
 }
 
-.ArticleTitle {
+.article-title {
   padding: 20px 30px 0px 30px;
   font-size: 35px;
   text-align: left;
@@ -103,7 +103,7 @@
   font-weight: 300;
 }
 
-.Article {
+.article {
   padding: 30px;
   font-size: 20px;
   text-align: justify;
@@ -113,14 +113,14 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .Article {
+  .article {
     column-count: 1;
   }
 }
 
 /* Buttons */
 
-.ButtonContainer {
+.button-container {
   display: inline-block;
   font-size: 25px;
   height: 30px;
@@ -133,11 +133,11 @@
   transition: all 0.2s ease-in-out;
 }
 
-.ButtonContainer:hover {
+.button-container:hover {
   background-color: rgb(255, 255, 255);
 }
 
-.ButtonIcon {
+.button-icon {
   float: left;
   margin-top: 0px;
   height: 30px;
@@ -145,29 +145,29 @@
   background-size: 30px 30px;
 }
 
-.ButtonIconLink {
+.button-icon-link {
   background-image: url(../graphics/interface/linkbutton.png);
 }
 
-.ButtonIconBack {
+.button-icon-back {
   background-image: url(../graphics/interface/backbutton.png);
 }
 
-.ButtonIconAdd {
+.button-icon-add {
   background-image: url(../graphics/interface/plusbutton.png);
 }
 
-.ButtonIconDownload {
+.button-icon-download {
   background-image: url(../graphics/interface/downloadbutton.png);
 }
 
-.ButtonLabel {
+.button-label {
   float: left;
   margin-top: -2px;
   margin-left: 10px;
 }
 
-.SwitchButtonContainer {
+.switch-button-container {
   display: flex;
   font-size: 18px;
   cursor: pointer;
@@ -179,17 +179,17 @@
   box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.SwitchButton {
+.switch-button {
   padding: 5px 15px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.SwitchButton:hover {
+.switch-button:hover {
   box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.05);
 }
 
-.SwitchButtonSelected {
+.switch-button-selected {
   color: #0099cc;
   font-weight: bold;
   background-color: white;
@@ -197,27 +197,27 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
-.TabContainer {
+.tab-container {
   display: flex;
   font-size: 22px;
 }
 
-.TabButton {
+.tab-button {
   padding: 5px 15px;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.TabButton + .TabButton {
+.tab-button + .tab-button {
   margin-left: 8px;
 }
 
-.TabButton:hover {
+.tab-button:hover {
   background-color: white;
 }
 
-.TabSelected {
+.tab-selected {
   color: #0099cc;
   font-weight: bold;
   background-color: white;
@@ -242,7 +242,7 @@ select {
 
 /* Checkboxes */
 
-.CheckboxContainer {
+.checkbox-container {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -258,7 +258,7 @@ select {
 }
 
 /* Hide the browser's default checkbox */
-.CheckboxContainer input {
+.checkbox-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -279,12 +279,12 @@ select {
 }
 
 /* On mouse-over, add a grey background color */
-.CheckboxContainer:hover input ~ .checkmark {
+.checkbox-container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.CheckboxContainer input:checked ~ .checkmark {
+.checkbox-container input:checked ~ .checkmark {
   background-color: #99cccc;
 }
 
@@ -296,12 +296,12 @@ select {
 }
 
 /* Show the checkmark when checked */
-.CheckboxContainer input:checked ~ .checkmark:after {
+.checkbox-container input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.CheckboxContainer .checkmark:after {
+.checkbox-container .checkmark:after {
   left: 7px;
   top: 2px;
   width: 5px;

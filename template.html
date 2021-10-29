@@ -1,34 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>Template</title>
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Clicker+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,200&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Clicker+Script&display=swap" rel="stylesheet" />
     <script src="javascript/jquery-3.5.1.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
-
     <!-- Information boxes -->
 
-    <a onclick="$('#AboutEditions').fadeOut('fast');">
-        <div class="AboutContainer" id="AboutEditions" style="display:none;">
-            <div class="About">
-                <div class="ArticleTitle">Om utg&aring;vorna</div>
-                <div class="Article">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                    voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                    cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-                    est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
-                    libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-                    maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
-                    et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
-                    sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
-                    doloribus asperiores repellat.
+    <a onclick="$('#about-editions').fadeOut('fast');">
+        <div class="about-container" id="about-editions" style="display: none">
+            <div class="about">
+                <div class="article-title">Om utg&aring;vorna</div>
+                <div class="article">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                    blanditiis praesentium voluptatum deleniti atque corrupti quos
+                    dolores et quas molestias excepturi sint occaecati cupiditate non
+                    provident, similique sunt in culpa qui officia deserunt mollitia
+                    animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
+                    est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id quod maxime placeat
+                    facere possimus, omnis voluptas assumenda est, omnis dolor
+                    repellendus. Temporibus autem quibusdam et aut officiis debitis aut
+                    rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint
+                    et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                    sapiente delectus, ut aut reiciendis voluptatibus maiores alias
+                    consequatur aut perferendis doloribus asperiores repellat.
                 </div>
             </div>
         </div>
@@ -37,48 +39,49 @@
     <!-- GU and CDH logotypes -->
 
     <div id="app" class="borders">
-
         <div id="brand">
-            <div id="GUlogotypeBG">
-                <div id="GUlogotype"></div>
+            <div id="gu-logo-bg">
+                <div id="gu-logo"></div>
             </div>
             <!-- If vertical space is precious, remove this line and use the foot template with the
-                                CDHlogo in lower right corner -->
-            <div id="CDHLogo">Centre<br><span class="cdh-logo-cursive">for
-                </span>Digital <br>Humanities</div>
+                                cdh-logo in lower right corner -->
+            <div id="cdh-logo">
+                Centre<br /><span class="cdh-logo-cursive">for </span>Digital
+                <br />Humanities
+            </div>
         </div>
 
         <!-- Title and settings -->
 
-        <div id="MainTitle">Fancy<br>Title</div>
+        <div id="main-title">Fancy<br />Title</div>
 
         <!-- These could be placed in a row or in columns -->
 
         <div class="row">
             <div>
-                <a onclick="$('#AboutEditions').fadeIn('fast');">
-                    <div class="ButtonContainer">
-                        <div class="ButtonIcon ButtonIconAdd"></div>
-                        <div class="ButtonLabel">Add something</div>
+                <a onclick="$('#about-editions').fadeIn('fast');">
+                    <div class="button-container">
+                        <div class="button-icon button-icon-add"></div>
+                        <div class="button-label">Add something</div>
                     </div>
                 </a>
             </div>
             <div>
-                <div class="ButtonContainer">
-                    <div class="ButtonIcon ButtonIconDownload"></div>
-                    <div class="ButtonLabel">Download something</div>
+                <div class="button-container">
+                    <div class="button-icon button-icon-download"></div>
+                    <div class="button-label">Download something</div>
                 </div>
             </div>
             <div>
-                <div class="ButtonContainer">
-                    <div class="ButtonIcon ButtonIconLink"></div>
-                    <div class="ButtonLabel">Link to page</div>
+                <div class="button-container">
+                    <div class="button-icon button-icon-link"></div>
+                    <div class="button-label">Link to page</div>
                 </div>
             </div>
             <div>
-                <div class="ButtonContainer">
-                    <div class="ButtonIcon ButtonIconBack"></div>
-                    <div class="ButtonLabel">Start over</div>
+                <div class="button-container">
+                    <div class="button-icon button-icon-back"></div>
+                    <div class="button-label">Start over</div>
                 </div>
             </div>
         </div>
@@ -86,45 +89,45 @@
         <!-- These could be placed in a row or in columns -->
 
         <div class="row">
-            <label class="CheckboxContainer">Option 1
-                <input type="checkbox" checked>
+            <label class="checkbox-container">Option 1
+                <input type="checkbox" checked />
                 <span class="checkmark"></span>
             </label>
 
-            <label class="CheckboxContainer">Option 2
-                <input type="checkbox" checked>
+            <label class="checkbox-container">Option 2
+                <input type="checkbox" checked />
                 <span class="checkmark"></span>
             </label>
         </div>
 
         <div class="row-controls">
-            <div class="SwitchButtonContainer">
-                <div class="SwitchButton SwitchButtonSelected">Option 1</div>
-                <div class="SwitchButton">Option 2</div>
+            <div class="switch-button-container">
+                <div class="switch-button switch-button-selected">Option 1</div>
+                <div class="switch-button">Option 2</div>
             </div>
         </div>
 
         <div class="row-controls">
-            <div class="SwitchButtonContainer">
-                <div class="SwitchButton">Option 1</div>
-                <div class="SwitchButtonMiddle SwitchButton">Option 2</div>
-                <div class="SwitchButton SwitchButtonSelected">Option 3</div>
+            <div class="switch-button-container">
+                <div class="switch-button">Option 1</div>
+                <div class="switch-buttonMiddle switch-button">Option 2</div>
+                <div class="switch-button switch-button-selected">Option 3</div>
             </div>
         </div>
 
         <div class="row">
-            <div class="TabContainer">
-                <div class="TabButton TabSelected">Texter</div>
-                <div class="TabButton">Galleri</div>
-                <div class="TabButton">Analys</div>
+            <div class="tab-container">
+                <div class="tab-button tab-selected">Texter</div>
+                <div class="tab-button">Galleri</div>
+                <div class="tab-button">Analys</div>
             </div>
         </div>
-
     </div>
 
     <div id="foot"></div>
-    <script>$("#foot").load("foot.html");</script>
-
+    <script>
+        $("#foot").load("foot.html");
+    </script>
 </body>
 
 </html>
