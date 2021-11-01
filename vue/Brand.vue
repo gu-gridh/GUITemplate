@@ -3,36 +3,25 @@
     <div id="gu-logo-bg">
       <div id="gu-logo"></div>
     </div>
-    <div id="cdh-logo">
-      Centre<br /><span class="cdh-logo-cursive">for </span>Digital
-      <br />Humanities
-    </div>
+    <CdhLogo />
   </div>
 </template>
 
 <script>
-export default {};
+import CdhLogo from "./CdhLogo.vue";
+
+export default {
+  name: "Brand",
+  components: {
+    CdhLogo,
+  },
+};
 </script>
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Clicker+Script&display=swap");
 
-#cdh-logo {
-  text-align: left;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 50px;
-  line-height: 0.8;
-  font-family: "Barlow Condensed", sans-serif;
-}
-
-#cdh-logo .cdh-logo-cursive {
-  font-family: "Clicker Script", cursive;
-  font-size: 30px;
-  vertical-align: 40%;
-}
-
-#brand #cdh-logo {
+#brand .cdh-logo {
   padding: 30px 0px 10px 0px;
 }
 
