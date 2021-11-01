@@ -1,33 +1,36 @@
 <template>
-  <div class="ButtonContainer" style="width:220px;">
-    <div
-      class="ButtonIcon"
-      style=" background-image: url(graphics/interface/plusbutton.png);"
-    />
-    <div class="ButtonLabel" style="">Add something</div>
+  <div class="button-container">
+    <div :class="`button-icon button-icon-${icon}`"></div>
+    <div class="button-label">{{ label }}</div>
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: "ButtonLink",
+  props: ["icon", "label"],
+};
+</script>
 
 <style>
-.ButtonContainer {
-  font-family: "Barlow Condensed", sans-serif;
+.button-container {
+  display: inline-block;
+  font-size: 25px;
   height: 30px;
-  width: 200px;
+  min-width: 220px;
   border-radius: 10px;
   padding: 8px;
   margin-top: 2px;
-  margin-left: -10px;
+  margin-left: -8px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
-.ButtonContainer:hover {
+.button-container:hover {
   background-color: rgb(255, 255, 255);
 }
 
-.ButtonIcon {
+.button-icon {
   float: left;
   margin-top: 0px;
   height: 30px;
@@ -35,11 +38,19 @@
   background-size: 30px 30px;
 }
 
-.ButtonLabel {
-  float: left;
-  font-size: 25px;
+.button-icon-link {
+  background-image: url(graphics/interface/linkbutton.png);
+}
 
-  margin-top: -2px;
-  margin-left: 10px;
+.button-icon-back {
+  background-image: url(graphics/interface/backbutton.png);
+}
+
+.button-icon-add {
+  background-image: url(graphics/interface/plusbutton.png);
+}
+
+.button-icon-download {
+  background-image: url(graphics/interface/downloadbutton.png);
 }
 </style>

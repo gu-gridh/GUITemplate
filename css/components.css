@@ -1,0 +1,326 @@
+/* Layout */
+
+.borders {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  margin-block: 20px;
+}
+
+.row-controls {
+  margin: 10px -10px;
+  display: flex;
+  justify-content: space-between;
+}
+.row-controls > * {
+  margin: 10px;
+}
+.row-controls-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Logos */
+
+#cdh-logo {
+  text-align: left;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 0.8;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+#cdh-logo .cdh-logo-cursive {
+  font-family: "Clicker Script", cursive;
+  font-size: 30px;
+  vertical-align: 40%;
+}
+
+#brand #cdh-logo {
+  padding: 30px 0px 10px 0px;
+}
+
+#gu-logo-bg {
+  float: right;
+  height: 165px;
+  width: 155px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  border-radius: 0px 0px 5px 5px;
+}
+
+#gu-logo {
+  width: 155px;
+  height: 185px;
+  padding: 15px 0 0 0;
+  background: url(../graphics/interface/gu_logo.png);
+  background-size: 125px 95px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Title: adjust size and font-family to suit the project but keep it distinct from Barlow */
+
+#main-title {
+  font-size: 90px;
+  line-height: 0.8;
+  padding: 40px 0px 0px 0px;
+  margin-bottom: 30px;
+}
+
+/* Information overlays */
+
+.about-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.about {
+  height: auto;
+  width: 70%;
+  border-radius: 10px;
+  background-color: white;
+  z-index: 101;
+  box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.article-title {
+  padding: 20px 30px 0px 30px;
+  font-size: 35px;
+  text-align: left;
+
+  font-weight: 300;
+}
+
+.article {
+  padding: 30px;
+  font-size: 20px;
+  text-align: justify;
+  column-count: 2;
+  column-gap: 40px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+  .article {
+    column-count: 1;
+  }
+}
+
+/* Buttons */
+
+.button-container {
+  display: inline-block;
+  font-size: 25px;
+  height: 30px;
+  min-width: 220px;
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 2px;
+  margin-left: -8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-container:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.button-icon {
+  float: left;
+  margin-top: 0px;
+  height: 30px;
+  width: 30px;
+  background-size: 30px 30px;
+}
+
+.button-icon-link {
+  background-image: url(../graphics/interface/linkbutton.png);
+}
+
+.button-icon-back {
+  background-image: url(../graphics/interface/backbutton.png);
+}
+
+.button-icon-add {
+  background-image: url(../graphics/interface/plusbutton.png);
+}
+
+.button-icon-download {
+  background-image: url(../graphics/interface/downloadbutton.png);
+}
+
+.button-label {
+  float: left;
+  margin-top: -2px;
+  margin-left: 10px;
+}
+
+.switch-button-container {
+  display: flex;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: rgb(208, 208, 208);
+  background-color: rgb(220, 220, 220);
+  box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.switch-button {
+  padding: 5px 15px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.switch-button:hover {
+  box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.switch-button-selected {
+  color: #0099cc;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.tab-container {
+  display: flex;
+  font-size: 22px;
+}
+
+.tab-button {
+  padding: 5px 15px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.tab-button + .tab-button {
+  margin-left: 8px;
+}
+
+.tab-button:hover {
+  background-color: white;
+}
+
+.tab-selected {
+  color: #0099cc;
+  font-weight: bold;
+  background-color: white;
+}
+
+/* Inputs */
+
+input[type="text"],
+select {
+  width: 100%;
+  outline: none;
+  display: inline-block;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 1);
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+/* Checkboxes */
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-right: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  margin-top: 3px;
+  height: 22px;
+  width: 22px;
+  background-color: white;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #99cccc;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.foot {
+  background-color: rgb(65, 65, 65);
+  color: white;
+  margin-top: 130px;
+  padding: 20px 65px 30px;
+  height: 120px;
+}
