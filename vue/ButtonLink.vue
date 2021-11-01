@@ -1,6 +1,6 @@
 <template>
   <div class="button-container">
-    <div :class="`button-icon button-icon-${icon}`"></div>
+    <div v-if="icon" :class="`button-icon button-icon-${icon}`"></div>
     <div class="button-label">{{ label }}</div>
   </div>
 </template>
