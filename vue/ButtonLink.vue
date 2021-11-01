@@ -39,18 +39,18 @@ export default {
 }
 
 .button-icon-link {
-  background-image: url(graphics/interface/linkbutton.png);
+  background-image: url(../graphics/interface/linkbutton.png);
 }
 
 .button-icon-back {
-  background-image: url(graphics/interface/backbutton.png);
+  background-image: url(../graphics/interface/backbutton.png);
 }
 
 .button-icon-add {
-  background-image: url(graphics/interface/plusbutton.png);
+  background-image: url(../graphics/interface/plusbutton.png);
 }
 
 .button-icon-download {
-  background-image: url(graphics/interface/downloadbutton.png);
+  background-image: url(../graphics/interface/downloadbutton.png);
 }
 </style>
