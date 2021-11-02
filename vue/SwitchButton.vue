@@ -5,7 +5,7 @@
       :key="option"
       class="switch-button"
       :class="{ 'switch-button-selected': option === selected }"
-      @click="selected = option"
+      @click="$emit('change', option)"
     >
       {{ option }}
     </div>
@@ -15,13 +15,7 @@
 <script>
 export default {
   name: "SwitchButton",
-  props: ["options"],
-  data: () => ({
-    selected: 0,
-  }),
-  created() {
-    this.selected = this.options[0];
-  },
+  props: ["options", "selected"],
 };
 </script>
 

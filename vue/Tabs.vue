@@ -5,7 +5,7 @@
       :key="option"
       class="tab-button"
       :class="{ 'tab-selected': option === selected }"
-      @click="select(option)"
+      @click="$emit('change', option)"
     >
       {{ option }}
     </div>
@@ -16,11 +16,6 @@
 export default {
   name: "Tabs",
   props: ["options", "selected"],
-  methods: {
-    select(option) {
-      this.$emit("change", option);
-    },
-  },
 };
 </script>
 
