@@ -227,23 +227,6 @@
   background-color: white;
 }
 
-/* Inputs */
-
-input[type="text"],
-select {
-  width: 100%;
-  outline: none;
-  display: inline-block;
-  border: 0px;
-  background-color: rgba(0, 0, 0, 1);
-  box-sizing: border-box;
-}
-
-::placeholder {
-  color: black;
-  opacity: 1; /* Firefox */
-}
-
 /* Checkboxes */
 
 .checkbox-container {
