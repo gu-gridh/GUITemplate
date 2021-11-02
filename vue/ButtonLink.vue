@@ -1,5 +1,5 @@
 <template>
-  <div class="button-container">
+  <div class="button-container" @click="$emit('click')">
     <div v-if="icon" :class="`button-icon button-icon-${icon}`"></div>
     <div class="button-label">{{ label }}</div>
   </div>
@@ -52,5 +52,11 @@ export default {
 
 .button-icon-download {
   background-image: url(../graphics/interface/downloadbutton.png);
+}
+
+.button-label {
+  float: left;
+  margin-top: -2px;
+  margin-left: 10px;
 }
 </style>
