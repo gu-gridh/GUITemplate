@@ -122,6 +122,14 @@
   }
 }
 
+/* Layout elements */
+
+.section {
+  border-radius: 5px;
+  margin-bottom: 40px;
+  background-color: rgb(245, 245, 245);
+}
+
 /* Buttons */
 
 .button-container {
