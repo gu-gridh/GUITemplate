@@ -1,5 +1,7 @@
 <template>
   <div class="pane-content">
+    <div v-if="title" class="pane-title">{{ title }}</div>
+
     <slot />
   </div>
 </template>
@@ -7,6 +9,7 @@
 <script>
 export default {
   name: "PaneContent",
+  props: ["title"],
 };
 </script>
 
@@ -21,5 +24,11 @@ export default {
 
 .pane-content > :last-child {
   margin-bottom: 0;
+}
+
+.pane-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #0099cc;
 }
 </style>
