@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div v-show="show" class="modal-container" @click="$emit('hide')">
+    <div v-show="show" class="modal-container" @click="hide">
       <div class="modal" @click.stop>
         <slot />
       </div>
@@ -9,6 +9,9 @@
 </template>
 
 <script>
+// Clicking away -> pop state -> emit hide event (-> parent component sets `show` prop to false)
+// Browser back button -> pop state -> ...
+
 export default {
   name: "Modal",
   props: {
@@ -18,6 +21,9 @@ export default {
     onPopstate() {
       this.$emit("hide");
     },
+    hide() {
+      window.history.back();
+    },
   },
   watch: {
     show(show) {
@@ -25,7 +31,6 @@ export default {
         window.history.pushState(null, "modal");
         window.addEventListener("popstate", this.onPopstate);
       } else {
-        window.history.back();
         window.removeEventListener("popstate", this.onPopstate);
       }
     },
