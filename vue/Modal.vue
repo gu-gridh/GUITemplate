@@ -35,6 +35,8 @@ export default {
   top: 0;
   width: 100%;
   height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
@@ -46,11 +48,13 @@ export default {
 
 .modal {
   height: auto;
-  width: 70%;
+  max-height: 100%;
+  max-width: 100%;
   border-radius: 10px;
   background-color: white;
   z-index: 101;
   box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.3);
+  overflow: auto;
 }
 
 .article-title {
@@ -64,14 +68,14 @@ export default {
   padding: 30px;
   font-size: 20px;
   text-align: justify;
-  column-count: 2;
+  columns: 2 15em;
   column-gap: 40px;
   font-weight: 300;
 }
 
-@media screen and (max-width: 1000px) {
-  .article {
-    column-count: 1;
+@media screen and (min-width: 800px) {
+  .modal {
+    width: 70%;
   }
 }
 </style>

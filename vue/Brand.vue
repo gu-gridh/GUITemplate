@@ -49,7 +49,7 @@ export default {
 
 @media screen and (max-width: 600px) {
   #gu-logo-bg {
-    float: none;
+    display: none;
   }
 }
 </style>
