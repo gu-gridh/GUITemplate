@@ -17,4 +17,10 @@ export default {
   padding: 40px 0px 0px 0px;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 600px) {
+  #main-title {
+    font-size: 60px;
+  }
+}
 </style>

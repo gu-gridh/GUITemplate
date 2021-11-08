@@ -46,4 +46,10 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media screen and (max-width: 600px) {
+  #gu-logo-bg {
+    float: none;
+  }
+}
 </style>
