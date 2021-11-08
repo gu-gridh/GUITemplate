@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div class="modal-container" id="modal" @click="hideModal">
+    <div v-show="show" class="modal-container" @click="$emit('hide')">
       <div class="modal" @click.stop>
         <slot />
       </div>
@@ -9,12 +9,26 @@
 </template>
 
 <script>
-import { mapMutations } from "vuex";
-
 export default {
   name: "Modal",
+  props: {
+    show: Boolean,
+  },
   methods: {
-    ...mapMutations(["hideModal"]),
+    onPopstate() {
+      this.$emit("hide");
+    },
+  },
+  watch: {
+    show(show) {
+      if (show) {
+        window.history.pushState(null, "modal");
+        window.addEventListener("popstate", this.onPopstate);
+      } else {
+        window.history.back();
+        window.removeEventListener("popstate", this.onPopstate);
+      }
+    },
   },
 };
 </script>
