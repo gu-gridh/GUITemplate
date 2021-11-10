@@ -93,6 +93,11 @@ export default {
 }
 
 @media screen and (min-width: 800px) {
+  .modal-container {
+    /* Thicker bottom padding to facilitate clicking away. */
+    padding-bottom: 3rem;
+  }
+
   .modal {
     width: 70%;
   }

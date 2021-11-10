@@ -19,10 +19,16 @@ export default {
   color: white;
   margin-top: 130px;
   padding: 20px 65px 30px;
-  height: 120px;
+  min-height: 120px;
 }
 
 .foot .cdh-logo {
   float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .foot .cdh-logo {
+    display: none;
+  }
 }
 </style>
