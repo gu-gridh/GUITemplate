@@ -2,9 +2,11 @@
   "name": "cdh-gui-vue",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/cdh-gui-vue.umd.min.js",
+  "licence": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name cdh-gui-vue src/main.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "lint": "vue-cli-service lint"
@@ -12,6 +14,9 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "typeface-clicker-script": "^1.1.13"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.14"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.5",
