@@ -5,12 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "typeface-clicker-script": "^1.1.13",
-    "vue": "^2.6.10"
+    "typeface-clicker-script": "^1.1.13"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.5",
@@ -22,6 +23,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.0.0",
     "prettier": "^1.18.2",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "vuepress": "^1.8.2"
   }
 }

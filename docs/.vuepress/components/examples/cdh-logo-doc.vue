@@ -1,0 +1,3 @@
+<template>
+  <CdhLogo />
+</template>
