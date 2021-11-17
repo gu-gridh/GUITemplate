@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "typeface-clicker-script": "^1.1.13",
     "vue": "^2.6.10"
   },
   "devDependencies": {
