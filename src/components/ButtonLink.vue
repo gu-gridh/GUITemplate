@@ -39,19 +39,19 @@ export default {
 }
 
 .button-icon-link {
-  /* background-image: url(@/assets/linkbutton.png); */
+  background-image: url(~@/assets/linkbutton.png);
 }
 
 .button-icon-back {
-  /* background-image: url(@/assets/backbutton.png); */
+  background-image: url(~@/assets/backbutton.png);
 }
 
 .button-icon-add {
-  /* background-image: url(@/assets/plusbutton.png); */
+  background-image: url(~@/assets/plusbutton.png);
 }
 
 .button-icon-download {
-  /* background-image: url(@/assets/downloadbutton.png); */
+  background-image: url(~@/assets/downloadbutton.png);
 }
 
 .button-label {

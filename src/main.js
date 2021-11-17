@@ -1,5 +1,6 @@
 import * as components from "./components";
 import "@/assets/css/base.css";
+import "typeface-barlow-condensed";
 
 const CdhGui = {
   install(Vue, options = {}) {

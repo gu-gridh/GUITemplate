@@ -19,8 +19,6 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Clicker+Script&display=swap");
-
 #brand .cdh-logo {
   padding: 30px 0px 10px 0px;
 }
@@ -41,7 +39,7 @@ export default {
   width: 155px;
   height: 185px;
   padding: 15px 0 0 0;
-  /* background: url(@/assets/gu_logo.png); */
+  background: url(~@/assets/gu_logo.png);
   background-size: 125px 95px;
   background-repeat: no-repeat;
   background-position: center;
