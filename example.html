@@ -20,15 +20,10 @@
         }
 
         .publication {
+            display: flex;
             width: 48.5%;
             transition: all 0.2s ease-in-out;
-            border-style: none;
-            border-color: black;
-            border-width: 0.5px;
-            border-radius: 5px;
             overflow: hidden;
-            margin-bottom: 40px;
-            background-color: rgb(245, 245, 245);
         }
 
         .publication.publication2 {
@@ -89,7 +84,6 @@
 
         .left-pane-content {
             padding: 15px 30px;
-            width: 100%;
         }
 
         .right-pane {
@@ -122,8 +116,8 @@
 
 <body>
     <a onclick="$('#about-editions').fadeOut('fast');">
-        <div class="about-container" id="about-editions" style="display: none">
-            <div class="about">
+        <div class="modal-container" id="about-editions" style="display: none">
+            <div class="modal">
                 <div class="article-title">Om utg&aring;vorna</div>
                 <div class="article">
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui
@@ -196,7 +190,7 @@
         <!-- This Div collects every edition item in a new section -->
 
         <div class="publications">
-            <div class="publication">
+            <div class="section publication">
                 <div class="left-pane">
                     <div class="left-pane-content">
                         <div class="tab-container">
@@ -231,7 +225,7 @@
                 </div>
             </div>
 
-            <div class="publication publication2">
+            <div class="section publication publication2">
                 <div class="left-pane">
                     <div class="left-pane-content">
                         <div class="pub-title">Utg&aring;va 2</div>
