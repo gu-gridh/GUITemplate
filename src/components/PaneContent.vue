@@ -1,7 +1,9 @@
 <template>
   <div class="pane-content">
-    <div v-if="title" class="pane-title">{{ title }}</div>
-
+    <div v-if="title || $slots.title" class="pane-title">
+      {{ title }}
+      <slot name="title" />
+    </div>
     <slot />
   </div>
 </template>
