@@ -1,13 +1,14 @@
 <template>
   <div class="demo">
-    <component :is="componentName" />
+    <component v-if="componentName" :is="componentName" />
+    <slot />
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    componentName: { type: String, required: true },
+    componentName: { type: String },
   },
 };
 </script>

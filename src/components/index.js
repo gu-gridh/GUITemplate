@@ -5,6 +5,7 @@ export { default as Container } from "./Container.vue";
 export { default as Controls } from "./Controls.vue";
 export { default as ControlsSection } from "./ControlsSection.vue";
 export { default as Footer } from "./Footer.vue";
+export { default as GoLink } from "./GoLink.vue";
 export { default as MainTitle } from "./MainTitle.vue";
 export { default as Modal } from "./Modal.vue";
 export { default as Pane } from "./Pane.vue";

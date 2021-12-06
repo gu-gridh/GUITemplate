@@ -34,7 +34,7 @@ module.exports = {
             {
               title: "Components",
               collapsable: false,
-              children: ["cdh-logo"],
+              children: ["cdh-logo", "go-link"],
             },
           ],
         },
