@@ -6,8 +6,6 @@ The CDH logotype.
 
 <Demo componentName="examples-cdh-logo-doc" />
 
-## Source Code
-
 <SourceCode>
-<<< @/src/components/CdhLogo/CdhLogo.vue
+<<< @/docs/.vuepress/components/examples/cdh-logo-doc.vue
 </SourceCode>

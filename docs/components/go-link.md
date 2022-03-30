@@ -4,8 +4,8 @@ A link with a decorative icon.
 
 ## Example
 
-<Demo>
-<a href="https://dh.gu.se/">
-    <GoLink>Centre for Digital Humanities</GoLink>
-</a>
-</Demo>
+<Demo componentName="examples-go-link-doc" />
+
+<SourceCode>
+<<< @/docs/.vuepress/components/examples/go-link-doc.vue
+</SourceCode>
