@@ -1,3 +1,4 @@
+export { default as CdhBody } from "./CdhBody.vue";
 export { default as Brand } from "./Brand.vue";
 export { default as ButtonLink } from "./ButtonLink.vue";
 export { default as CdhLogo } from "./CdhLogo";

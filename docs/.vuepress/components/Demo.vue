@@ -1,8 +1,10 @@
 <template>
-  <div class="demo">
-    <component v-if="componentName" :is="componentName" />
-    <slot />
-  </div>
+  <CdhBody>
+    <div class="demo">
+      <component v-if="componentName" :is="componentName" />
+      <slot />
+    </div>
+  </CdhBody>
 </template>
 
 <script>

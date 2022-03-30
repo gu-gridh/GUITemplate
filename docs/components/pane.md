@@ -1,4 +1,4 @@
-# Pane
+# Pane, PaneContent
 
 A division of content, with optional title.
 
