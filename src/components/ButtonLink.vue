@@ -39,19 +39,55 @@ export default {
 }
 
 .button-icon-link {
-  background-image: url(../assets/linkbutton.png);
+  background-image: url(../assets/linkbutton.svg);
 }
 
 .button-icon-back {
-  background-image: url(../assets/backbutton.png);
+  background-image: url(../assets/backbutton.svg);
+}
+
+.button-icon-down {
+  background-image: url(../assets/downbutton.svg);
+}
+
+.button-icon-left {
+  background-image: url(../assets/back-black.svg);
+}
+
+.button-icon-right {
+  background-image: url(../assets/link-arrow-black.svg);
 }
 
 .button-icon-add {
-  background-image: url(../assets/plusbutton.png);
+  background-image: url(../assets/plusbutton.svg);
+}
+
+.button-icon-info {
+  background-image: url(../assets/infobutton.svg);
 }
 
 .button-icon-download {
-  background-image: url(../assets/downloadbutton.png);
+  background-image: url(../assets/downloadbutton.svg);
+}
+
+.button-icon-pause {
+  background-image: url(../assets/pausebutton.svg);
+}
+
+.button-icon-play {
+  background-image: url(../assets/playbutton.svg);
+}
+
+.button-icon-search {
+  background-image: url(../assets/searchbutton.svg);
+}
+
+.button-icon-searchcircle {
+  background-image: url(../assets/searchcirclebutton.png);
+}
+
+.button-icon-eye {
+  background-image: url(../assets/eyebutton.png);
 }
 
 .button-label {

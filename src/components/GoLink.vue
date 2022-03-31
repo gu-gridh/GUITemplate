@@ -19,7 +19,7 @@ export default {
 
 .icon {
   display: inline-block;
-  background-image: url(../assets/link-arrow-black.png);
+  background-image: url(../assets/link-arrow-black.svg);
   height: 15px;
   width: 15px;
   background-size: 15px;
