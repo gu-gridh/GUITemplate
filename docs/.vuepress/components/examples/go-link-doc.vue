@@ -1,5 +1,5 @@
 <template>
-<a href="https://dh.gu.se/">
+  <a href="https://dh.gu.se/">
     <GoLink>Centre for Digital Humanities</GoLink>
-</a>
+  </a>
 </template>

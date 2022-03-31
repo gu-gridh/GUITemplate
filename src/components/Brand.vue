@@ -19,6 +19,10 @@ export default {
 </script>
 
 <style>
+#brand {
+  width: 100%;
+}
+
 #brand .cdh-logo {
   padding: 30px 0px 10px 0px;
 }

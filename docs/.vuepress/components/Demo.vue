@@ -17,9 +17,6 @@ export default {
 
 <style>
 .demo {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   padding: 1rem;
 }
 </style>
