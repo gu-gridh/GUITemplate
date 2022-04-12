@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import CdhLogo from "./CdhLogo";
+import CdhLogo from "./CdhLogo.vue";
 
 export default {
   name: "Footer",
