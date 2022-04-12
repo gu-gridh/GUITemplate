@@ -22,12 +22,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #brand {
   width: 100%;
 }
 
-#brand .cdh-logo {
+.cdh-logo {
   padding: 30px 0px 10px 0px;
 }
 
