@@ -51,19 +51,19 @@ select {
   opacity: 1; /* Firefox */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.cdh-body h1,
+.cdh-body h2,
+.cdh-body h3,
+.cdh-body h4,
+.cdh-body h5,
+.cdh-body h6 {
   font-weight: inherit;
 }
 
-h1 {
+.cdh-body h1 {
   font-size: 3rem;
 }
 
-h2 {
+.cdh-body h2 {
   font-size: 1.65rem;
 }

@@ -3,7 +3,11 @@
     <div id="gu-logo-bg">
       <div id="gu-logo"></div>
     </div>
-    <CdhLogo />
+    <div class="brand-content">
+      <slot>
+        <CdhLogo />
+      </slot>
+    </div>
   </div>
 </template>
 
@@ -47,6 +51,12 @@ export default {
   background-size: 125px 95px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.brand-content {
+  /* Mitigate margins of child elements */
+  margin-top: -1px;
+  padding-top: 1px;
 }
 
 @media screen and (max-width: 600px) {
