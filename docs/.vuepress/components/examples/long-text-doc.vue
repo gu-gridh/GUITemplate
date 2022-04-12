@@ -1,0 +1,48 @@
+<template>
+  <div>
+    <div>
+      Container width:
+      <label v-for="width in widths" :key="width">
+        <input type="radio" v-model="containerWidth" :value="width" />
+        {{ width }}
+      </label>
+    </div>
+
+    <div :style="{ width: containerWidth }">
+      <LongText>
+        <p>
+          Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit
+          amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh.
+          Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet
+          quam vehicula elementum sed sit amet dui. Curabitur aliquet quam id
+          dui posuere blandit. Nulla quis lorem ut libero malesuada feugiat.
+          Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor
+          volutpat. Quisque velit nisi, pretium ut lacinia in, elementum id
+          enim.
+        </p>
+        <p>
+          Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi,
+          pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan
+          tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat.
+          Nulla porttitor accumsan tincidunt. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+          neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+          Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+          Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel,
+          ullamcorper sit amet ligula. Donec rutrum congue leo eget malesuada.
+        </p>
+      </LongText>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    widths: ["2000px", "1000px", "800px", "600px", "300px"],
+    containerWidth: "",
+  }),
+};
+</script>

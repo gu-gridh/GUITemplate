@@ -42,6 +42,7 @@ module.exports = {
                 "controls",
                 "footer",
                 "go-link",
+                "long-text",
                 "main-title",
                 "modal",
                 "pane",
