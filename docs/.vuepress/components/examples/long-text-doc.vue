@@ -1,15 +1,22 @@
 <template>
   <div>
-    <div>
+    <Row>
       Container width:
       <label v-for="width in widths" :key="width">
-        <input type="radio" v-model="containerWidth" :value="width" />
+        <input type="radio" v-model="widthSelected" :value="width" />
         {{ width }}
       </label>
-    </div>
+    </Row>
+    <Row>
+      Mode:
+      <label v-for="mode in modes" :key="mode">
+        <input type="radio" v-model="modeSelected" :value="mode" />
+        {{ mode }}
+      </label>
+    </Row>
 
-    <div :style="{ width: containerWidth }">
-      <LongText>
+    <Row :style="{ width: widthSelected }">
+      <LongText :mode="modeSelected">
         <p>
           Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit
           amet nisl tempus convallis quis ac lectus. Sed porttitor lectus nibh.
@@ -28,13 +35,15 @@
           faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
           neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
           Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+        </p>
+        <p>
           Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
           Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
           posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel,
           ullamcorper sit amet ligula. Donec rutrum congue leo eget malesuada.
         </p>
       </LongText>
-    </div>
+    </Row>
   </div>
 </template>
 
@@ -42,7 +51,9 @@
 export default {
   data: () => ({
     widths: ["2000px", "1000px", "800px", "600px", "300px"],
-    containerWidth: "",
+    widthSelected: "",
+    modes: ["margin", "indent"],
+    modeSelected: "",
   }),
 };
 </script>
