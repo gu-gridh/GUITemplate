@@ -1,5 +1,5 @@
 <template>
-  <div class="button-container" @click="$emit('click')">
+  <div class="button-link" @click="$emit('click')">
     <div v-if="icon" :class="`button-icon button-icon-${icon}`"></div>
     <div class="button-label">{{ label }}</div>
   </div>
@@ -13,29 +13,29 @@ export default {
 </script>
 
 <style>
-.button-container {
+.button-link {
   display: inline-block;
-  font-size: 25px;
-  height: 30px;
-  min-width: 220px;
-  border-radius: 10px;
-  padding: 8px;
-  margin-top: 2px;
-  margin-left: -8px;
+  font-size: 1.25rem;
+  height: 1.5rem;
+  min-width: 11rem;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+  margin-top: 0.1rem;
+  margin-left: -0.4rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
-.button-container:hover {
+.button-link:hover {
   background-color: rgb(255, 255, 255);
 }
 
 .button-icon {
   float: left;
   margin-top: 0px;
-  height: 30px;
-  width: 30px;
-  background-size: 30px 30px;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-size: 1.5rem 1.5rem;
 }
 
 .button-icon-link {
@@ -92,7 +92,7 @@ export default {
 
 .button-label {
   float: left;
-  margin-top: -2px;
-  margin-left: 10px;
+  margin-top: -0.1rem;
+  margin-left: 0.5rem;
 }
 </style>
