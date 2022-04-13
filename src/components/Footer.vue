@@ -1,7 +1,9 @@
 <template>
-  <div id="foot" class="foot">
-    <CdhLogo />
-  </div>
+  <footer>
+    <slot>
+      <CdhLogo />
+    </slot>
+  </footer>
 </template>
 
 <script>
@@ -13,8 +15,8 @@ export default {
 };
 </script>
 
-<style>
-.foot {
+<style scoped>
+footer {
   background-color: rgb(65, 65, 65);
   color: white;
   margin-top: 130px;
@@ -22,12 +24,12 @@ export default {
   min-height: 120px;
 }
 
-.foot .cdh-logo {
+footer .cdh-logo {
   float: right;
 }
 
 @media screen and (max-width: 600px) {
-  .foot .cdh-logo {
+  footer .cdh-logo {
     display: none;
   }
 }
