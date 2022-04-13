@@ -56,4 +56,6 @@ module.exports = {
       },
     },
   },
+
+  base: process.env.BASE_URL || "/",
 };

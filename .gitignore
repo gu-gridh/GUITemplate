@@ -21,4 +21,5 @@ yarn-error.log*
 *.sw?
 
 # Custom
-docs/.vuepress/.*
+/docs/.vuepress/.*
+/docs/.vuepress/dist/
