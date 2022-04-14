@@ -17,4 +17,8 @@ export default {
   display: inline-flex;
   flex-direction: column;
 }
+
+.button-list .button-link {
+  display: block;
+}
 </style>

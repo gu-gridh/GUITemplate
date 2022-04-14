@@ -8,7 +8,9 @@
     </Row>
     <Row>
       <ButtonList>
-        <ButtonLink icon="download" label="A short label" />
+        <a href="#works-with-links-too">
+          <ButtonLink icon="download" label="A short label" />
+        </a>
         <ButtonLink
           icon="link"
           label="A pretty long label, in fact much longer"
