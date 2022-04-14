@@ -37,6 +37,7 @@ module.exports = {
               children: [
                 "brand",
                 "button-link",
+                "button-list",
                 "cdh-logo",
                 "container",
                 "controls",
