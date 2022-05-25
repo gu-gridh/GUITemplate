@@ -17,11 +17,11 @@ export default {
   display: inline-block;
   font-size: 1.25em;
   height: 1.2em;
-  min-width: 11rem;
   border-radius: 0.5rem;
   padding: 0.4rem;
   margin-top: 0.1rem;
   margin-left: -0.4rem;
+  margin-right: 1rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -33,6 +33,7 @@ export default {
 .button-icon {
   float: left;
   margin-top: 0px;
+  margin-right: 0.5rem;
   height: 1.5rem;
   width: 1.5rem;
   background-size: 1.5rem 1.5rem;
@@ -93,6 +94,5 @@ export default {
 .button-label {
   float: left;
   margin-top: -0.1em;
-  margin-left: 0.5rem;
 }
 </style>
