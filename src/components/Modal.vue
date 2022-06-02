@@ -22,7 +22,7 @@ export default {
       this.$emit("hide");
     },
     hide() {
-      window.history.back();
+      if (this.show) window.history.back();
     },
   },
   watch: {
