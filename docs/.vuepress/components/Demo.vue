@@ -1,9 +1,6 @@
 <template>
   <CdhBody>
-    <div class="demo">
-      <component v-if="componentName" :is="componentName" />
-      <slot />
-    </div>
+    <component v-if="componentName" :is="componentName" class="demo" />
   </CdhBody>
 </template>
 

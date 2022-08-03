@@ -46,6 +46,7 @@ module.exports = {
                 "long-text",
                 "main-title",
                 "modal",
+                "page-back",
                 "pane",
                 "row",
                 "switch-button",
