@@ -32,11 +32,11 @@ export default {
 
 .button-icon {
   float: left;
-  margin-top: 0px;
-  margin-right: 0.5rem;
-  height: 1.5rem;
-  width: 1.5rem;
-  background-size: 1.5rem 1.5rem;
+  margin-top: 0em;
+  margin-right: 0.5em;
+  height: 1.2em;
+  width: 1.2em;
+  background-size: 1.2em;
 }
 
 .button-icon-link {

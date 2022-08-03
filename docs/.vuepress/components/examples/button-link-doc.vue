@@ -6,7 +6,6 @@
 
     <ButtonLink icon="download" label="Download file" />
     <ButtonLink icon="down" label="Go to archive" />
-    <ButtonLink icon="add" label="More" />
     <ButtonLink icon="info" label="Instructions" />
     <ButtonLink icon="eye" label="Hide annotations" />
 
@@ -28,6 +27,12 @@
     <div>
       <ButtonLink icon="back" label="Previous page" />
       <ButtonLink icon="link" label="Next page" />
+    </div>
+
+    <div>
+      <ButtonLink icon="add" label="More" style="font-size: 180%;" />
+      <ButtonLink icon="add" label="More" />
+      <ButtonLink icon="add" label="More" style="font-size: 60%;" />
     </div>
   </div>
 </template>
