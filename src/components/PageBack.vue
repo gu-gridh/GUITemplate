@@ -54,6 +54,6 @@ export default {
 }
 
 .page-back-button:hover {
-  background-color: rgba(245 245 245 / 60%);
+  background-color: rgba(255 255 255 / 90%);
 }
 </style>
