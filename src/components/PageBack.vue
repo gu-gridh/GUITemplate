@@ -1,9 +1,15 @@
 <template>
   <div class="page-back">
-    <div class="square">
-      <a v-if="href != null" :href="href" class="page-back-button" />
-      <router-link v-else-if="to != null" :to="to" class="page-back-button" />
-      <div v-else @click="back()" class="page-back-button" />
+    <a v-if="href != null" :href="href" class="page-back-button">
+      <div class="square"></div>
+    </a>
+
+    <router-link v-else-if="to != null" :to="to" class="page-back-button">
+      <div class="square"></div>
+    </router-link>
+
+    <div v-else @click="back()" class="page-back-button">
+      <div class="square"></div>
     </div>
   </div>
 </template>
@@ -14,7 +20,6 @@ export default {
   props: ["href", "to"],
   methods: {
     back() {
-      console.log(window.history);
       window.history.back();
     },
   },
@@ -34,28 +39,16 @@ export default {
 
 .square {
   width: 100%;
+  /* For padding, `%` means % of the width. */
   padding-top: 100%;
-  position: relative;
-}
-.square > * {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .page-back-button {
   display: block;
-  max-width: 3rem;
+  width: 3rem;
   margin: 0.2rem;
-  /* height: 2rem;
-  width: 2rem; */
   border-radius: 50%;
-  background: url(../assets/back-black.svg);
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(../assets/back-black.svg) center/60% no-repeat;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
