@@ -1,7 +1,7 @@
 <template>
   <div class="cdh-logo">
-    Centre<br /><span class="cdh-logo-cursive">for </span>Digital
-    <br />Humanities
+    Gothenburg Research Infrastructure<br /><span class="cdh-logo-cursive">in </span>Digital Humanities
+    <br />
   </div>
 </template>
 
