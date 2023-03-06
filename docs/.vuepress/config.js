@@ -8,7 +8,7 @@ module.exports = {
   },
 
   themeConfig: {
-    repo: "https://github.com/CDH-DevTeam/GUITemplate",
+    repo: "https://github.com/gu-gridh/GUITemplate",
     docsDir: "docs",
     editLinks: true,
     docsBranch: "dev",

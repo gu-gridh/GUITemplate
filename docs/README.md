@@ -11,5 +11,5 @@ features:
   - title: Feature 3
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-footer: https://github.com/CDH-DevTeam/
+footer: https://github.com/gu-gridh/
 ---
