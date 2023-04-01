@@ -1,6 +1,6 @@
 <template>
-  <div class="cdh-logo">
-    GRIDH: <br />
+     <div class="cdh-logo">
+    GRIDH<div class="colon">:  </div> <br />
   <p>Gothenburg</p>
   <p>Research Infrastructure </p>
   <p>in Digital Humanities</p>
@@ -36,5 +36,11 @@ export default {
   font-size: 70%;
   margin-top:5px;
   margin-bottom:0px;
+}
+
+.cdh-logo .colon {
+  font-size: 84%;
+  display:inline;
+
 }
 </style>
