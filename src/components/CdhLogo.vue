@@ -21,7 +21,7 @@ export default {
   font-weight: 100;
   font-style: normal;
   /* Font size relative to parent */
-  font-size: 4.5em;
+  font-size: 2.5em;
   line-height: 0.8;
   font-family: "Barlow Condensed", sans-serif;
 }
