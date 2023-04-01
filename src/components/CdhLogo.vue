@@ -1,8 +1,9 @@
 <template>
   <div class="cdh-logo">
-    (GRIDH) Gothenburg    <br />
-    Research Infrastructure    <br />
-    in Digital Humanities
+    GRIDH: <br />
+  <p>Gothenburg</p>
+  <p>Research Infrastructure </p>
+  <p>in Digital Humanities</p>
   </div>
 </template>
 
@@ -20,7 +21,7 @@ export default {
   font-weight: 100;
   font-style: normal;
   /* Font size relative to parent */
-  font-size: 2.5em;
+  font-size: 4.5em;
   line-height: 0.8;
   font-family: "Barlow Condensed", sans-serif;
 }
@@ -29,5 +30,11 @@ export default {
   font-family: "Clicker Script", cursive;
   font-size: 60%;
   vertical-align: 40%;
+}
+
+.cdh-logo p {
+  font-size: 70%;
+  margin-top:5px;
+  margin-bottom:0px;
 }
 </style>
