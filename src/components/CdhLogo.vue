@@ -1,7 +1,8 @@
 <template>
   <div class="cdh-logo">
-    Gothenburg Research Infrastructure<br /><span class="cdh-logo-cursive">in </span>Digital Humanities
-    <br />
+    (GRIDH) Gothenburg    <br />
+    Research Infrastructure    <br />
+    in Digital Humanities
   </div>
 </template>
 
